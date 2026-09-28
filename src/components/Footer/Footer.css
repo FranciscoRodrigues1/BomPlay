@@ -1,0 +1,481 @@
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    width: 100%;
+
+    min-height: 220px;
+
+    padding: 45px 5%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        2fr
+        1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+    background-color: #0F172A;
+
+    border-top: 1px solid #334155;
+
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.footer-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+}
+
+.footer-brand a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+}
+
+.footer-brand img {
+
+    display: block;
+
+    width: 195px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+.footer-brand img:hover {
+
+    transform: scale(1.03);
+
+    opacity: 0.9;
+
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+   ========================================= */
+
+.footer-information {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.footer-information p {
+
+    margin: 0;
+
+    color: #94A3B8;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+.footer-copyright {
+
+    margin-top: 10px !important;
+
+    color: #CBD5E1 !important;
+
+    font-size: 14px !important;
+
+}
+
+.footer-author {
+
+    margin-top: 7px !important;
+
+    color: #60A5FA !important;
+
+    font-size: 17px !important;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   REDES SOCIAIS
+   ========================================= */
+
+.footer-social {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.footer-social a {
+
+    min-width: 155px;
+
+    min-height: 44px;
+
+    padding: 8px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 11px;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    background-color: transparent;
+
+    color: #94A3B8;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+/* =========================================
+   ÍCONES
+   ========================================= */
+
+.footer-social img {
+
+    width: 22px;
+
+    height: 22px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    transition:
+
+        transform 0.25s ease;
+
+}
+
+
+/* =========================================
+   EFEITO CÁPSULA
+   ========================================= */
+
+.footer-social a:hover {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #7C3AED
+        );
+
+    border-color: #60A5FA;
+
+    color: #F8FAFC;
+
+    transform: translateX(-5px);
+
+    box-shadow:
+
+        0 8px 20px rgba(37, 99, 235, 0.25);
+
+}
+
+.footer-social a:hover img {
+
+    transform: scale(1.1);
+
+}
+
+
+/* =========================================
+   ACESSIBILIDADE - FOCO
+   ========================================= */
+
+.footer a:focus-visible {
+
+    outline: 3px solid #60A5FA;
+
+    outline-offset: 4px;
+
+    border-radius: 999px;
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .footer {
+
+        grid-template-columns:
+            1fr
+            2fr
+            1fr;
+
+        gap: 30px;
+
+        padding: 40px 4%;
+
+    }
+
+    .footer-brand img {
+
+        width: 175px;
+
+    }
+
+    .footer-information p {
+
+        font-size: 15px;
+
+    }
+
+    .footer-social a {
+
+        min-width: 145px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================
+   TABLET MENOR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+        min-height: 260px;
+
+        gap: 35px;
+
+        padding: 40px 25px;
+
+    }
+
+    .footer-brand {
+
+        justify-content: flex-start;
+
+    }
+
+    .footer-information {
+
+        grid-column: 1 / -1;
+
+        grid-row: 2;
+
+        order: 3;
+
+    }
+
+    .footer-social {
+
+        align-items: flex-end;
+
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 520px) {
+
+    .footer {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        padding: 40px 18px;
+
+        gap: 30px;
+
+    }
+
+    .footer-brand {
+
+        justify-content: center;
+
+    }
+
+    .footer-brand img {
+
+        width: 165px;
+
+    }
+
+    .footer-information {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+        order: 2;
+
+    }
+
+    .footer-information p {
+
+        max-width: 320px;
+
+        font-size: 14px;
+
+    }
+
+    .footer-copyright {
+
+        font-size: 13px !important;
+
+    }
+
+    .footer-author {
+
+        font-size: 15px !important;
+
+    }
+
+    .footer-social {
+
+        align-items: center;
+
+        order: 3;
+
+        width: 100%;
+
+    }
+
+    .footer-social a {
+
+        width: 100%;
+
+        max-width: 220px;
+
+        justify-content: center;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================
+   CELULARES MUITO PEQUENOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .footer {
+
+        padding: 35px 15px;
+
+    }
+
+    .footer-brand img {
+
+        width: 150px;
+
+    }
+
+    .footer-information p {
+
+        font-size: 13px;
+
+    }
+
+    .footer-social a {
+
+        max-width: 200px;
+
+        min-height: 42px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =========================================
+   REDUÇÃO DE MOVIMENTO
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .footer-brand img,
+    .footer-social a,
+    .footer-social img {
+
+        transition: none;
+
+    }
+
+}
