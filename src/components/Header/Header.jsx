@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../../assets/Logo.png";
 
 function Header() {
 
@@ -66,7 +67,7 @@ function Header() {
         >
 
           <img
-            src="/src/assets/Logo.png"
+            src={logo}
             alt="BomPlay"
           />
 

@@ -1,4 +1,5 @@
 import "./Footer.css";
+import logo from "../../assets/Logo.png";
 
 // Componente responsável pelo rodapé da aplicação BomPlay.
 // Contém a identidade da plataforma, informações e redes sociais.
@@ -17,7 +18,7 @@ function Footer() {
           aria-label="Ir para a página inicial do BomPlay"
         >
           <img
-            src="/src/assets/Logo.png"
+            src={logo}
             alt="BomPlay"
           />
         </a>
